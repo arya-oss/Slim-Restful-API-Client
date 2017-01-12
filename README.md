@@ -1,6 +1,7 @@
 ## RESTFul API in Slim and REST Client in Angular Resource
-`base_url` is `http://localhost/rest/public/`
-`api_url` is `http://localhost/rest/public/users`
+1. `base_url` is `http://localhost/rest/public/`
+
+2. `api_url` is `http://localhost/rest/public/users`
 
 ### Database Table Structure
 
@@ -18,7 +19,7 @@ CREATE TABLE friends (
 ### How to setup (apache mod_rewrite must be enabled)
 1. Clone this repo in `www` or `htdocs` directory.
 2. Change DB configuration in `bootstrap/app.php` and import `resources/friends.sql` in a db.
-3. Install composer dependencies `composer Install`
+3. Install composer dependencies `composer install`
 
 4. Goto url `http://localhost/rest/public/users`
 
