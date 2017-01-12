@@ -1,0 +1,13 @@
+<table class="table table-striped">
+  <tr>
+    <th>All Users</th><th></th>
+  </tr>
+  <tr ng-repeat="user in users">
+    <td>{{user.name}}</td>
+    <td>
+      <a class="btn btn-primary" ui-sref="viewUser({id:user.id})"> View </a>
+      <a class="btn btn-danger" ng-click="deleteUser(user)"> Delete <i class="glyphicon glyphicon-remove"></i> </a>
+    </td>
+  </tr>
+</table>
+<a ui-sref="newUser" class="btn-success btn-lg">Add User <i class="glyphicon glyphicon-plus"></i></a>

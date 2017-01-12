@@ -1,0 +1,25 @@
+<table class="table table-bordered">
+    <tr>
+        <td><h3>Details for {{user.rollno}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Full Name</td>
+        <td>{{user.name}}</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>{{user.email}}</td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td>{{user.phone}}</td>
+    </tr>
+    <tr>
+        <td>Company</td>
+        <td>{{user.company}}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editUser({id:user.id})"> <i class="glyphicon glyphicon-pencil"></i> </a>
+</div>
